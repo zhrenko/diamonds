@@ -1,0 +1,11 @@
+```{r}
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+
+ggplot(data=diamonds, mapping=aes(x=carat, y=price)) +
+  geom_point() +
+  labs(title='Diamond Price by Carat',
+       subtitle = Sys.time()) +
+  theme_economist()
+```
